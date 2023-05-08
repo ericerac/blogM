@@ -1,27 +1,30 @@
+<script setup lang="ts">
+import {ref}  from "vue"
+const te = ref(false)
+
+</script>
+
+
 <template>
     <div>
-        <header>
+        <navbar />
+        <slot ></slot>
+       
+        <foot />
 
-        </header>
-        <footer>
-
-        </footer>
+        
     </div>
 </template>
 
 <style scoped>
+@import url("../style/reset.css");
 
 header{
     width:100vw;
-    height:200px;
+    height:100vh;
     border:1px solid blue;
-    background-color: rgba(0,0,250,.4);
+    background-color: rgba(0,0,250,.2);
 
 }
-footer{
-    width:100vw;
-    height:100px;
-    border:1px solid rgb(255, 0, 132);
-    background-color: rgba(246, 0, 250, 0.4);
-}
+
 </style>

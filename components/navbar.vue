@@ -1,0 +1,130 @@
+<template>
+    <nav class="navBar">
+  
+
+  <menu class="menu2">
+    <li><a href="#">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="#" >contact</a></li>
+    <!-- <li><a href="#" class="selected">contact</a></li> -->
+    <li><a href="#">blog</a></li>
+  </menu>
+</nav>
+
+</template>
+<style scoped>
+
+.navBar{
+  position:fixed;
+  top:20px;
+display:flex;
+flex-direction: row;
+z-index:100;
+}
+nav {
+width:100vw;
+ 
+  
+}
+.menu2{
+    display:flex;
+flex-direction: row;
+margin:auto;
+}
+
+
+li {
+  list-style-type : none;
+  background      : linear-gradient(rgba(20,20,255,0.4) 85%, rgba(55,55,255,0.5) 100%);
+  width:max-content;
+height:20px;
+  float   : left;
+  cursor  : pointer;
+  padding : 3px 10px;
+  border-top    : 2px solid rgba(200,200,255,0.5);
+  border-bottom : 2px solid rgba(50,50,50,0.4);
+}
+
+li:first-child {
+  border-radius : 5px 0 0 5px;
+}
+
+li:last-child {
+  border-radius : 0 5px 5px 0;
+}
+
+a {
+  
+  padding : 10px 13px;
+  font-size : 26px;
+  text-decoration : none;
+  border-radius   : 5px;
+  position        : relative;
+  top   : 0;
+  color : #FFF;     
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  max-width:max-content;
+  padding:3px 5px;
+  color : #4eacff;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+li a:after {
+  display  : block;
+  content  : '';
+  position : absolute;
+  top  : 100%;
+  left : 42%;
+  border-style : solid;
+  border-color : transparent;
+  border-width : 5px 5px 0 5px;
+  transition   : all .4s;
+}
+
+li:hover a:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
+
+/*************************************/
+
+.menu2 {
+  width : 350px;
+  padding-inline: 0;
+}
+
+.menu2 a {
+  font-family : georgia;
+  font-size   : 14px;
+  font-style  : italic;
+  text-transform : capitalize;
+}
+
+.menu2 li {
+  border-right  : 1px solid rgba(200,200,255,0.5);
+  border-left   : 1px solid rgba(40,40,40,0.2); 
+}
+
+.selected {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+.selected:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
+
+a.fun {
+  display : none;
+}
+</style>
