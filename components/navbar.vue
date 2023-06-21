@@ -3,11 +3,11 @@
   
 
   <menu class="menu2">
-    <li><a href="#">home</a></li>
-    <li><a href="#">about</a></li>
-    <li><a href="#" >contact</a></li>
+    <li><a href="https://martarenyer.com" target="_blank">home</a></li>
+    <li><a href="#"><NuxtLink to="/blog">Blog</NuxtLink></a></li>
+    <li><a href="#" ><NuxtLink to="/">Contact</NuxtLink></a></li>
     <!-- <li><a href="#" class="selected">contact</a></li> -->
-    <li><a href="#">blog</a></li>
+    <li><a href="#"><NuxtLink to="/login">Login</NuxtLink></a></li>
   </menu>
 </nav>
 

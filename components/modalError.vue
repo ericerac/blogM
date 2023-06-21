@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper" @click.stop=" modalError = false ">
+    <div class="wrapper" @click=" modalError = false ">
     <div class="bloc_modal">
         <div class="logo"></div>
         <div class="textMessage">
